@@ -1,0 +1,490 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header {    
+    display: block;
+    background-color: #EAC926;
+    padding: 3vw 3vw 1vw 3vw;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo1 {
+    flex-grow: 1;
+    width: 50%;
+    padding: 0.5vw;
+    text-align: center;
+    margin: auto;
+}
+
+.busqueda {
+    flex-grow: 1;
+    width: 50%;
+    padding: 0.5vw;
+    text-align: center;
+    margin: auto;
+}
+
+.busqueda form input {
+    width: 30vw;
+    height: 8vw;
+    font-size: 3vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    border: none;
+}
+
+.busqueda form button {
+    width: 8vw;
+    height: 8vw;
+    font-size: 3vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: white;
+}
+
+.cuotas {
+    flex-grow: 1;
+    width: 50%;
+    padding: 0.5vw;
+    text-align: center;
+    margin: auto;
+}
+
+.cuotas p {
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+section.banner img{
+    width: 100%;
+    display: block;
+}
+
+.burger-menu{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.burger-menu i{
+    margin: 20px 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #0044AA;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.burger-menu i:hover{
+    cursor: pointer;
+    background-color: #0022AA;
+}
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-izq {
+    display: flex;
+}
+
+.nav-der {
+    display: flex;
+}
+
+.nav-izq li {
+    list-style-type: none;
+    padding: 0.5vw;
+}
+
+.nav-der li {
+    list-style-type: none;
+    padding: 0.5vw;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+}
+
+ul i {
+    padding: 0vw 0.5vw 0vw 0.1vw;
+}
+
+/*-----------------------------*/
+
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-articulo { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    background-color: #fff;
+    margin: 10px 0px;
+    width: 100%; 
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.price {
+    width: 30%;
+    font-size: 18px; 
+}
+
+.discount {
+    width: 70%;
+    text-align: right;
+    padding-right: 1vw;
+    color: #39b54a;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 1;
+}
+
+.description {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: normal;
+    opacity: 1;
+    color: #666;
+}
+
+main section article i { 
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+
+.last-visit h3 {
+    font-size: 3vw;
+    color: #666;
+    margin: 20px 0px;
+}
+
+main section article img {
+    display: block;
+    width: 100%;
+}
+
+/*----------------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #666;
+    padding: 20px 5%;
+}
+
+.article-footer {
+    text-align: center;
+    margin: 20px 0px;
+    padding: 1vw;
+    width: 100%;
+    box-shadow: none;
+}
+
+footer i {
+    color: #1259c3;
+}
+
+
+
+/*propio de los formularios*/
+
+.register, .login {
+    width: 90%;
+}
+
+.login input,
+.register input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1em;
+}
+
+.pass {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1em;
+}
+
+form h3 {
+    font-size: 1em;
+    color: rgb(68, 68, 68);
+    margin: 6vw 0vw 2vw 0vw;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    border: rgb(119, 119, 119) 1px solid;
+    border-radius: 5px;
+}
+
+#vendedor, #comprador, #electro, #hogar, #vidaSana, #moda, #jugueteria {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    color: rgb(68, 68, 68);
+}
+
+.interests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border: rgb(119, 119, 119) 1px solid;
+    border-radius: 5px;
+}
+
+.fotoUsuario {
+    display: block;
+    width: 100%;
+    border: rgb(119, 119, 119) 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    color: rgb(68, 68, 68);
+}
+/*-----*/
+
+.submitReset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.login input[type='submit']{
+    display: inline-block;
+    width: 100%; /*hay un solo button en login*/
+    color: #FFF;
+    background-color: #0044AA;  
+    border-radius: 5px;
+}
+
+.register input[type='submit']{
+    display: inline-block;
+    width: 73%; /*hay dos button en register*/
+    color: #FFF;
+    background-color: #0044AA;  
+    border-radius: 5px;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+.register input[type='reset']{
+    display: inline-block;
+    width: 25%;
+    color: #FFF;
+    background-color: #AA0044;
+}
+
+.register input[type='reset']:hover{
+    background-color: #CC1155;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 100px) { 
+   
+    nav {
+        display: none; /*OCULTAR BARRA DE NAVEGACION*/
+    }
+    .description {
+        display: none; /*OCULTAR DESCRIPCION*/
+    }
+    
+}
+
+/*------------------------------------*/
+ 
+@media (min-width: 361px) { /*TABLETS ANCHO MINIMO 361PX*/
+
+    .logo1 {
+        width: 33%; /*logo, busqueda y cuotas en una sola fila*/
+    }
+    
+    .busqueda {  /*logo, busqueda y cuotas en una sola fila*/
+        width: 33%;
+    }
+
+    .cuotas {    /*logo, busqueda y cuotas en una sola fila*/
+        width: 33%;
+    }
+
+    .busqueda form input {
+        width: 25vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+    
+    .busqueda form button {
+        width: 4vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+    
+    .burger-menu { /*ocultar el menu hamburguesa*/
+        display: none;
+    }
+
+    nav {
+        display: flex; /*MOSTRAR BARRA DE NAVEGACION*/
+    }
+
+    .description {
+        display: flex; /*MOSTRAR DESCRIPCION*/
+    }
+
+    .cuotas p { /*variación de tamaño de tipografía*/
+        font-size: 2vw;
+    }
+
+    header ul li a{ /*variación de tamaño*/
+        font-size: 2vw;
+    }
+
+    article { /*SE MOSTRATRÁN 2 POR ANCHO DE PANTALLA*/
+        width: 48%;
+        box-shadow: 0px 0px 10px grey; /*agrego border shadow*/  
+    }
+
+    .register, .login {
+        width: 70%; /*ancho de los formularios*/
+    }
+}
+
+/*------------------------------------*/
+
+@media (min-width: 769px) { /*DESKTOP ANCHO MINIMO 769*/ 
+
+    .logo1 {    /*logo, busqueda y cuotas en una sola fila*/
+        width: 33%;
+    }
+    
+    .busqueda {  /*logo, busqueda y cuotas en una sola fila*/
+        width: 33%;
+    }
+
+    .cuotas {  /*logo, busqueda y cuotas en una sola fila*/
+        width: 33%;  
+    }
+
+    .busqueda form input {
+        width: 25vw;
+        height: 4vw;
+        font-size: 1em;
+    }
+    
+    .busqueda form button {
+        width: 4vw;
+        height: 4vw;
+        font-size: 1em;
+    }
+    
+    .burger-menu { /*ocultar el menu hamburguesa*/
+        visibility: hidden;
+    }
+
+    nav {
+        display: flex; /*MOSTRAR BARRA DE NAVEGACION*/
+    }
+
+    .description {
+        display: flex; /*MOSTRAR DESCRIPCION*/
+    }
+
+    .cuotas p { /*variación de tamaño de tipografía*/
+        font-size: 1em;
+    }
+
+    header ul li a{ /*variación de tamaño*/
+        font-size: 1em;
+    }
+    article {   /*SE MOSTRATRÁN 4 POR ANCHO DE PANTALLA*/
+        width: 23%;
+        box-shadow: 0px 0px 10px grey; /*agrego border shadow*/
+    }
+
+    .article-footer {
+        margin: 20px 0px;
+        width: 33%;
+    }
+
+    .register, .login {
+        width: 50%; /*ancho de los formularios*/
+    }
+}
+
+
