@@ -132,8 +132,6 @@ ul i {
     padding: 0vw 0.5vw 0vw 0.1vw;
 }
 
-/*-----------------------------*/
-
 main {
     width: 90%;
     margin: auto;
@@ -151,7 +149,13 @@ main {
 article {
     background-color: #fff;
     margin: 10px 0px;
-    width: 100%; 
+    width: 100%;
+    transition: all;
+    transition-duration: 2s;
+}
+
+article:hover .description {
+    display:flex;
 }
 
 article div.main-article {
@@ -186,6 +190,7 @@ article div.main-article {
     font-weight: normal;
     opacity: 1;
     color: #666;
+    
 }
 
 main section article i { 
@@ -403,10 +408,6 @@ form h3 {
         display: flex; /*MOSTRAR BARRA DE NAVEGACION*/
     }
 
-    .description {
-        display: flex; /*MOSTRAR DESCRIPCION*/
-    }
-
     .cuotas p { /*variación de tamaño de tipografía*/
         font-size: 2vw;
     }
@@ -417,8 +418,12 @@ form h3 {
 
     article { /*SE MOSTRATRÁN 2 POR ANCHO DE PANTALLA*/
         width: 48%;
-        box-shadow: 0px 0px 10px grey; /*agrego border shadow*/  
     }
+
+    article:hover {
+        box-shadow: 0px 0px 10px grey; /*agrego border shadow*/ 
+    }
+    
 
     .register, .login {
         width: 70%; /*ancho de los formularios*/
@@ -461,10 +466,6 @@ form h3 {
         display: flex; /*MOSTRAR BARRA DE NAVEGACION*/
     }
 
-    .description {
-        display: flex; /*MOSTRAR DESCRIPCION*/
-    }
-
     .cuotas p { /*variación de tamaño de tipografía*/
         font-size: 1em;
     }
@@ -474,7 +475,10 @@ form h3 {
     }
     article {   /*SE MOSTRATRÁN 4 POR ANCHO DE PANTALLA*/
         width: 23%;
-        box-shadow: 0px 0px 10px grey; /*agrego border shadow*/
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px grey; /*agrego border shadow*/ 
     }
 
     .article-footer {
