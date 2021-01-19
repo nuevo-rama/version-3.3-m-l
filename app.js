@@ -1,31 +1,23 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
-// Método para formatear el puerto en base al argumento enviado en npm start
-const formattedPort = process.env.PORT || 3000
+app.listen(process.env.PORT ||3000,()=>{ console.log('corriendo servidor')});
 
-// Se define la carpeta pública para exponer assets y archivos estáticos
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname,'./public')));
 
-// Se levanta el servidor en el resultado de parsear el puerto desde el argumento
-app.listen(formattedPort, () =>{
-    console.log('Servidor funcionando en puerto '+ formattedPort);
+app.get('/',(req,res)=>{
+
+  res.sendFile(path.join(__dirname,'./views/home.html'))
 });
 
-// Se definen rutas y respuestas en el mismo script (recordar que esto puede modularizarse)
+app.get('/login',(req,res)=> {
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(path.join(__dirname,'./views/login.html'))
 });
 
-app.post('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
-});
+app.get('/register',(req,res)=> {
 
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
-
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
+  res.sendFile(path.join(__dirname,'./views/register.html'))
 });
